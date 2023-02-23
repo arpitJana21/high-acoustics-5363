@@ -15,6 +15,7 @@ let fechData = async function (apiURL) {
       colors: data.product_colors,
     };
   });
+  /* 
   let tagObj = {};
   dataArr.forEach(function (data) {
     data.tags.forEach(function (tag) {
@@ -22,8 +23,8 @@ let fechData = async function (apiURL) {
       else tagObj[tag] = 1;
     });
   });
-
   console.log(tagObj);
+*/
 };
 fechData(apiURL);
 
@@ -41,3 +42,16 @@ let displayImages = function (dataArray) {
     images.append(img);
   });
 };
+
+/**************************
+ * Sticky Nav Bar
+ **************************/
+const header = document.querySelector("header");
+let sticky = header.offsetTop;
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+});
