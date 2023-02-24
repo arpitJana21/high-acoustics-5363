@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --gray: #e9ecef;
+  --black: #495057;
+  --pink: #d6336c;
+  --pink0: #fff0f6;
+  --pink1: #ffdeeb;
+  --fontSizeSm: 0.95rem;
+  --fontSizeMd: 1.5rem;
+  --letterSpaceSm: 0.019rem;
+  --radiusSm: 6px;
+  --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --transition: all 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--black);
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  transition: all 0.3s ease;
+}
+
+.sign-box {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: var(--radiusSm);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+}
+
+.sign-box .header {
+  background-color: var(--pink0);
+  padding: 25px;
+  border-bottom: 2px solid var(--pink1);
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  color: var(--black);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sign-box .form {
+  padding: 25px;
+}
+
+.sign-box .form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sign-box .form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: var(--fontSizeSm);
+  letter-spacing: var(--letterSpaceSm);
+}
+
+.sign-box .form-control input {
+  font-size: var(--fontSizeSm);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  letter-spacing: var(--letterSpaceSm);
+  border: 2px solid var(--gray);
+  border-radius: var(--radiusSm);
+  transition: var(--transition);
+}
+
+.sign-box .form-control input:focus {
+  border-color: var(--black);
+}
+
+.sign-box .form-control i {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  opacity: 0;
+  color: var(--pink);
+  transition: var(--transition);
+}
+
+.sign-box .form-control.error i {
+  opacity: 1;
+}
+
+.sign-box .form-control small {
+  opacity: 0;
+  display: block;
+  margin-top: 2px;
+  text-align: right;
+  color: var(--pink);
+  transition: var(--transition);
+}
+
+.sign-box .form-control.error small {
+  opacity: 1;
+}
+
+.sign-box button {
+  letter-spacing: var(--letterSpaceSm);
+  border-radius: var(--radiusSm);
+  border: none;
+  font-size: var(--fontSizeSm);
+  font-weight: 500;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--pink);
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sign-box button:hover {
+  background-color: #c2255c;
+}
+
+.sign-box p {
+  text-align: center;
+}
+
+.sign-box #signin-page,
+.sign-box #signup-page {
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.sign-box #signin-page:hover,
+.sign-box #signup-page:hover {
+  text-decoration: underline;
+}
+
+.hide-box {
+  opacity: 0;
+  pointer-events: none;
+}
