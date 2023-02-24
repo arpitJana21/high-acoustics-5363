@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./res/favicon.ico" type="image/x-icon" />
+    <title>Glammer crown</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- --------------- --------------- --------------- -->
+    <!-- --------------- Sign In Sign up --------------- -->
+    <!-- --------------- --------------- --------------- -->
+    <div class="modal-container">
+      <div class="sign-box sign-up-box hide-box">
+        <div class="header">
+          <h2>Create Account</h2>
+          <a class="close-modal" href="/Home Page/index.html"
+            ><i class="fa-solid fa-xmark"></i
+          ></a>
+        </div>
+        <form class="form" id="sign-up-form">
+          <div class="form-control">
+            <label>Username</label>
+            <input type="text" class="username" placeholder="arpitJana2103" />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Email</label>
+            <input
+              type="email"
+              class="email"
+              placeholder="arpitJana2103@gmail.com"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Password</label>
+            <input
+              type="password"
+              class="password"
+              placeholder="8 characters minimum"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              class="password2"
+              placeholder="8 characters minimum"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <button>Sign up</button>
+          <p>Already have an account? <span id="signin-page">Log in</span></p>
+        </form>
+      </div>
+
+      <div class="sign-box sign-in-box">
+        <div class="header">
+          <h2>Sign In</h2>
+          <a class="close-modal" href="/Home Page/index.html"
+            ><i class="fa-solid fa-xmark"></i
+          ></a>
+        </div>
+        <form class="form" id="sign-in-form">
+          <div class="form-control">
+            <label>Email</label>
+            <input
+              type="email"
+              class="email"
+              placeholder="xxxxxxxx@gmail.com"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Password</label>
+            <input
+              type="password"
+              class="password"
+              placeholder="xxxxxxxxxxxxxx"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <button>Log in</button>
+          <p>
+            Don't have an account? <span id="signup-page">Create Account</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

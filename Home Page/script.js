@@ -55,3 +55,23 @@ window.addEventListener("scroll", function () {
     header.classList.remove("sticky");
   }
 });
+/**************************
+ * Move to Sign in up page
+ **************************/
+let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+let loginoutBtn = document.querySelector("#loginoutBtn");
+if (currentUser === null) {
+  loginoutBtn.textContent = "Log in";
+} else {
+  loginoutBtn.textContent = "Log out";
+}
+loginoutBtn.addEventListener("click", function () {
+  if (currentUser === null) {
+    window.location.href = "/Sign-up page/index.html";
+  } else {
+    currentUser = null;
+    localStorage.removeItem("currentUser");
+    alert("Logged out successfully!");
+    loginoutBtn.textContent = "Log in";
+  }
+});
