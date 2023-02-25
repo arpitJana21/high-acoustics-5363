@@ -68,7 +68,7 @@ function check_signup_inputs() {
   }
 
   if (pass2Val === "") {
-    setErrorFor(signup_pass2Inp, "please conform password");
+    setErrorFor(signup_pass2Inp, "please confirm password");
   } else if (passVal.length !== pass2Val.length) {
     setErrorFor(signup_pass2Inp, "Password is not matching !");
   } else {
@@ -77,11 +77,11 @@ function check_signup_inputs() {
   }
   // Store Data in Local-Storage
   if (user.name && user.email && user.password) {
-    alert("Accout created Successfully 🎉 \nWellcome to Glammer crown");
+    alert("Account created Successfully 🎉 \nWellcome to Glammer crown");
     userDataArr.push(user);
     localStorage.setItem("userData", JSON.stringify(userDataArr));
     localStorage.setItem("currentUser", JSON.stringify(user));
-    window.location.href = "/Home Page/index.html";
+    window.location.href = "/index.html";
   }
 }
 
@@ -120,7 +120,7 @@ function check_signin_inputs() {
   } else {
     alert("welcome again to Glammer crown 💖");
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
-    window.location.href = "/Home Page/index.html";
+    window.location.href = "/index.html";
   }
 }
 
