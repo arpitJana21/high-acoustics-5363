@@ -2,13 +2,14 @@
 :root {
   --gray: #e9ecef;
   --black: #495057;
-  --pink: #d6336c;
   --pink0: #fff0f6;
   --pink1: #ffdeeb;
+  --pink: #f06595;
+  --pink6: #e64980;
   --fontSizeSm: 0.95rem;
   --fontSizeMd: 1.5rem;
   --letterSpaceSm: 0.019rem;
-  --radiusSm: 6px;
+  --radiusSm: 4px;
   --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   --transition: all 0.2s ease;
 }
@@ -137,7 +138,7 @@ body {
 }
 
 .sign-box button:hover {
-  background-color: #c2255c;
+  background-color: var(--pink6);
 }
 
 .sign-box p {

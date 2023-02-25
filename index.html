@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glammer crown</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/resources/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- --------------- -------------- --------------- -->
+    <!-- --------------- Header Section --------------- -->
+    <!-- --------------- -------------- --------------- -->
+
+    <header>
+      <div class="top">
+        <img id="logo" src="/resources/logo.png" alt="logo" />
+        <div id="search-box">
+          <input type="text" placeholder="search items..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div></div>
+
+        <div id="icons">
+          <i id="bag-icon" class="fa-solid fa-bag-shopping"></i>
+          <button id="loginoutBtn">Log in</button>
+        </div>
+      </div>
+
+      <nav class="bottom">
+        <a href="#">Home</a>
+        <a id="make-up" href="#">Makeup</a>
+        <a href="#">Hair Care</a>
+        <a href="#">Skin Care</a>
+        <a href="#">Sanitizing Care</a>
+        <a href="#">Collection</a>
+        <a href="#">Rewards</a>
+        <a href="#">Myglam Studio</a>
+        <a href="#">Offers</a>
+      </nav>
+    </header>
+
+    <section>
+      <!-- --------------- ----------------- --------------- -->
+      <!-- --------------- Drop Down Section --------------- -->
+      <!-- --------------- ----------------- --------------- -->
+
+      <div id="shadow"></div>
+      <div id="dropdown-container" class="hide-box">
+        <div>
+          <span>LIPS</span>
+          <li><a href="#">Lipstick</a></li>
+          <li><a href="#">Crayan Lipstick</a></li>
+          <li><a href="#">Liquid Lipstick</a></li>
+          <li><a href="#">Hi-Shine Lipstick</a></li>
+          <li><a href="#">Matte Lipstick</a></li>
+          <li><a href="#">Lip Gloss</a></li>
+          <li><a href="#">Lip Liner</a></li>
+          <li><a href="#">Lip Balm</a></li>
+          <li><a href="#">Lip Glitter</a></li>
+          <li><a href="#">Lip Stain</a></li>
+          <li><a href="#">Lipstick Set</a></li>
+          <li><a href="#">Lip Kit</a></li>
+          <li><a href="#">Find Your Lipstick</a></li>
+        </div>
+        <div>
+          <span>Face</span>
+          <li><a href="#">Fixing Powder</a></li>
+          <li><a href="#">Primer</a></li>
+          <li><a href="#">Consealer</a></li>
+          <li><a href="#">Foundation</a></li>
+          <li><a href="#">Compact Powder</a></li>
+          <li><a href="#">Setting Powder</a></li>
+          <li><a href="#">Banana Powder</a></li>
+          <li><a href="#">Sindoor</a></li>
+          <li><a href="#">Highlighter</a></li>
+          <li><a href="#">Blush</a></li>
+          <li><a href="#">Bronze</a></li>
+          <li><a href="#">Cheek Stain</a></li>
+        </div>
+        <div>
+          <span>Eyes</span>
+          <li><a href="#">Eye Shadow</a></li>
+          <li><a href="#">Eyeliner</a></li>
+          <li><a href="#">Eyebrows</a></li>
+          <li><a href="#">Glitter</a></li>
+          <li><a href="#">Mascara</a></li>
+          <li><a href="#">Kajal</a></li>
+          <li><a href="#">Eye Combos</a></li>
+        </div>
+        <div>
+          <div>
+            <span>Nails</span>
+            <li><a href="#">Nail Lacquer</a></li>
+            <li><a href="#">Nail Polish</a></li>
+            <li><a href="#">Matte Nail Polish</a></li>
+          </div>
+          <div>
+            <span>kits and combos</span>
+            <li><a href="#">Makeup Kits</a></li>
+            <li><a href="#">Bridal Makeup Kits</a></li>
+            <li><a href="#">Makeup Gift Sets</a></li>
+          </div>
+          <div>
+            <span>Makeup Assessories</span>
+            <li><a href="#">Makeup Brushes</a></li>
+            <li><a href="#">Eyeshadow Brushes</a></li>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------- ------------- --------------- -->
+      <!-- --------------- Image Slider  --------------- -->
+      <!-- --------------- ------------- --------------- -->
+
+      <div class="slider">
+        <div class="slides">
+          <!--   Radio Buttons   -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!--  Manual Navigation    -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!-- Automatic Navigation -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- Images -->
+          <div class="slide first">
+            <img
+              src="https://files.myglamm.com/site-images/original/1920X527-5.gif"
+              alt="error"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://files.myglamm.com/site-images/original/MM1920x527_5.jpg"
+              alt="error"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://files.myglamm.com/site-images/original/popxo1920x527_4.gif"
+              alt="error"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://files.myglamm.com/site-images/original/D2C-562-1920x527.jpg"
+              alt="error"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------- -------------- --------------- -->
+      <!-- --------------- Image Showcase --------------- -->
+      <!-- --------------- -------------- --------------- -->
+
+      <div class="showcase-img">
+        <img
+          src="https://files.myglamm.com/site-images/original/2240x614-7_3.gif"
+          alt="error"
+        />
+        <img
+          src="https://files.myglamm.com/site-images/original/2240x614-8_1.jpg"
+          alt="error"
+        />
+      </div>
+
+      <!-- --------------- ---------------- --------------- -->
+      <!-- --------------- In the spotlight --------------- -->
+      <!-- --------------- ---------------- --------------- -->
+
+      <div id="in-the-spotlight">
+        <span class="custom-header"><h3>in the spotlight</h3></span>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- --------------- -------------- --------------- -->
+    <!-- --------------- Add JavaScript --------------- -->
+    <!-- --------------- -------------- --------------- -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
